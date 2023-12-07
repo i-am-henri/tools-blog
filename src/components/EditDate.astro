@@ -1,0 +1,12 @@
+---
+interface Props {
+    date: Date;
+}
+const props: Props = Astro.props;
+---
+
+<div>
+    <p>
+        Last edit at the {props.date.toLocaleDateString()}.
+    </p>
+</div>
